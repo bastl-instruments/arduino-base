@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?fileVersion 4.0.0?>
-
-<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
 	<storageModule moduleId="org.eclipse.cdt.core.settings">
 		<cconfiguration id="de.innot.avreclipse.configuration.lib.release.215330590">
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="de.innot.avreclipse.configuration.lib.release.215330590" moduleId="org.eclipse.cdt.core.settings" name="Release">
 				<externalSettings/>
 				<extensions>
-					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
 					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
@@ -161,7 +159,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="libs/EEPROM/examples|libs/LiquidCrystal/examples|libs/SoftwareSerial/examples|libs-bastl/bastlMicroGranny/examples|libs-bastl/bastl/examples|libs/Stepper|libs/Servo|libs-external/TVoutfonts|libs-external/TVout|libs-external/Tlc5940|libs/Stepper/examples|libs/Wire/examples|libs-external/sdfatlib/html|libs-external/sdfatlib/SdFat/examples|libs-external/sdfatlib/extra|libs/SD|libs-external/WaveRP|libs/Robot_Control|sources|libs/Firmata|libs-external/ShiftRegister|robot|libs/Ethernet|libs/WiFi|libs-external/pollserial|libs/TFT|libs-external/ShiftRegister595|libs/Esplora|libs/Robot_Motor|libs/GSM" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="libs-bastl/bastl/players/test|libs-bastl/bastl/controls/test|libs-bastl/bastl/data/test|libs/EEPROM/examples|libs/LiquidCrystal/examples|libs/SoftwareSerial/examples|libs-bastl/bastlMicroGranny/examples|libs-bastl/bastl/examples|libs/Stepper|libs/Servo|libs-external/TVoutfonts|libs-external/TVout|libs-external/Tlc5940|libs/Stepper/examples|libs/Wire/examples|libs-external/sdfatlib/html|libs-external/sdfatlib/SdFat/examples|libs-external/sdfatlib/extra|libs/SD|libs-external/WaveRP|libs/Robot_Control|sources|libs/Firmata|libs-external/ShiftRegister|robot|libs/Ethernet|libs/WiFi|libs-external/pollserial|libs/TFT|libs-external/ShiftRegister595|libs/Esplora|libs/Robot_Motor|libs/GSM" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
