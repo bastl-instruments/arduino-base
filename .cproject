@@ -162,7 +162,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="libs-bastl/bastl/players/test|libs-bastl/bastl/controls/test|libs-bastl/bastl/data/test|libs/EEPROM/examples|libs/LiquidCrystal/examples|libs/SoftwareSerial/examples|libs-bastl/bastlMicroGranny/examples|libs-bastl/bastl/examples|libs/Stepper|libs/Servo|libs-external/TVoutfonts|libs-external/TVout|libs-external/Tlc5940|libs/Stepper/examples|libs/Wire/examples|libs-external/sdfatlib/html|libs-external/sdfatlib/SdFat/examples|libs-external/sdfatlib/extra|libs/SD|libs-external/WaveRP|libs/Robot_Control|sources|libs/Firmata|libs-external/ShiftRegister|robot|libs/Ethernet|libs/WiFi|libs-external/pollserial|libs/TFT|libs-external/ShiftRegister595|libs/Esplora|libs/Robot_Motor|libs/GSM" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="libs-external/Fat16/examples|libs-bastl/bastl/players/test|libs-bastl/bastl/controls/test|libs-bastl/bastl/data/test|libs/EEPROM/examples|libs/LiquidCrystal/examples|libs/SoftwareSerial/examples|libs-bastl/bastlMicroGranny/examples|libs-bastl/bastl/examples|libs/Stepper|libs/Servo|libs-external/TVoutfonts|libs-external/TVout|libs-external/Tlc5940|libs/Stepper/examples|libs/Wire/examples|libs-external/sdfatlib/html|libs-external/sdfatlib/SdFat/examples|libs-external/sdfatlib/extra|libs/SD|libs-external/WaveRP|libs/Robot_Control|sources|libs/Firmata|libs-external/ShiftRegister|robot|libs/Ethernet|libs/WiFi|libs-external/pollserial|libs/TFT|libs-external/ShiftRegister595|libs/Esplora|libs/Robot_Motor|libs/GSM" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
