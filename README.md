@@ -29,8 +29,8 @@ Test: If you can start eclipse you can pass on
 * Choose a workspace directory. We will refer to it as W_DIR.
 
 * Download the repositories from bastl-instruments and copy them in the following matter
-</code>
-  W_DIR
+
+ `W_DIR
     |
     arduino_base
     |   |
@@ -42,8 +42,7 @@ Test: If you can start eclipse you can pass on
     | 
     SEKVOJ
     |
-    ..other device specific projects
-</code>
+    ..other device specific projects`
 
 * Import arduino-base and the device projects in Eclipse by right-clicking in the project explorer and choosing
     Import > Existing projects into workspace
