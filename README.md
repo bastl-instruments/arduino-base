@@ -36,10 +36,33 @@ Test: If you can start eclipse you can pass on
   - Linux: sudo apt-get install gcc-avr binutils-avr avr-libc avrdude
   - Windows: Download and install WinAVR: http://winavr.sourceforge.net/
 
+  When the Eclipse plugin can locate those tools you were successful. You can check this in:
+    Preferences > AVR > Paths
+  The 'Atmel Part Description Files' are not needed here.
+
+
+### 3. Set up Serial connector
+
+* Install drivers for the programmer you are using to upload code to the chip.
+  For the sparkfun FTDI, the drivers are included in the arduino IDE. If you have it installed, you are done with this step.
+  In case have a different configuration, search for you FDTI chip on the web.
+
+* Plug in your programmer and find out the serial port it is using.
+  On mac on linux, this command will help you choose your device:
+  ls /dev | grep tty
+  
+* Create an AVR programmer in Eclipse. Open
+    Preferences > AVR > AVRDuded > Add
+  Choose the following options:
+    Programmer Hardware: Arduino
+    Default port: //the path you found out in the last step//
+    Default Baudrate: 115200
 
 
 
-### 3. Create Workspace and Projects
+
+
+### 4. Create Workspace and Projects
 
 * Choose a workspace directory. We will refer to it as W_DIR.
 
@@ -62,14 +85,15 @@ Test: If you can start eclipse you can pass on
 * Import arduino-base and the device projects in Eclipse by right-clicking in the project explorer and choosing
     Import > Existing projects into workspace
 
-### 4. Set up Serial connector
 
-* Install drivers for the programmer you are using to upload code to the chip
-  
-look up device by
-  ls /dev | grep tty
 
 ### 5. Set up avr-dude
 
 Create arduino as a device
 use it in projects
+
+
+
+
+### Links
+http://playground.arduino.cc/code/eclipse
