@@ -17,7 +17,8 @@ Test: If you can start eclipse you can pass on
 
 ### 2. Installing Eclipse Plugins and Toolchain
 
-* Open Eclipse and go to
+* Eclipse-PLUGIN
+  Open Eclipse and go to
     Help > Install News Software
   There, paste this link
     http://avr-eclipse.sourceforge.net/updatesite
@@ -27,6 +28,13 @@ Test: If you can start eclipse you can pass on
   If you want to check if the installation was successful, go to
     Help > About Eclipse Platform > Installation Details
   and look for the AVR plugin
+
+* AVR TOOLCHAIN
+  You will need to install the avr-g++ compiler in order to compile your code to a .hex file that can then later be sent to the chip.
+  This step depends on your platform:
+  - MAC OSX: Download and install the AVR CrossPack: http://www.obdev.at/products/crosspack/index.html
+  - Linux: sudo apt-get install gcc-avr binutils-avr avr-libc avrdude
+
 
 
 
