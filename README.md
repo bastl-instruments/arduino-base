@@ -15,12 +15,18 @@ missing: different achitectures, PATH, adding direct link to JVM in eclipse sett
 Test: If you can start eclipse you can pass on
 
 
-### 2. Installing Plugins and Toolchain
+### 2. Installing Eclipse Plugins and Toolchain
 
-* Install the eclipse AVR Plugin via
+* Open Eclipse and go to
     Help > Install News Software
-  and by using
+  There, paste this link
     http://avr-eclipse.sourceforge.net/updatesite
+  into the first field called 'Work with'
+
+  Click through the install process.
+  If you want to check if the installation was successful, go to
+    Help > About Eclipse Platform > Installation Details
+  and look for the AVR plugin
 
 
 
@@ -49,7 +55,8 @@ Test: If you can start eclipse you can pass on
 
 ### 4. Set up Serial connector
 
-Install drivers
+* Install drivers for the programmer you are using to upload code to the chip
+  
 look up device by
   ls /dev | grep tty
 
