@@ -30,10 +30,11 @@ Test: If you can start eclipse you can pass on
   and look for the AVR plugin
 
 * AVR TOOLCHAIN
-  You will need to install the avr-g++ compiler in order to compile your code to a .hex file that can then later be sent to the chip.
+  You will need to install the avr-g++ compiler in order to compile your code to a .hex file and send it to the chip over your serial port.
   This step depends on your platform:
   - MAC OSX: Download and install the AVR CrossPack: http://www.obdev.at/products/crosspack/index.html
   - Linux: sudo apt-get install gcc-avr binutils-avr avr-libc avrdude
+  - Windows: Download and install WinAVR: http://winavr.sourceforge.net/
 
 
 
