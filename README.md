@@ -66,7 +66,7 @@ Test: If you can start eclipse you can pass on
 
 * Choose a workspace directory. We will refer to it as W_DIR.
 
-* Download the repositories from bastl-instruments and copy them in the following matter
+* Download the repositories from bastl-instruments and copy them in the following matter. You will have to create the folder libs-bastl on your own. it goes next to libs and libs-external.
 
 		 W_DIR
 		    |
