@@ -68,19 +68,19 @@ Test: If you can start eclipse you can pass on
 
 * Download the repositories from bastl-instruments and copy them in the following matter
 
-	 `W_DIR
-	    |
-	    arduino_base
-	    |   |
-	    |   libs-bastl
-	    |       |
-	    |	    bastl
-	    |       |
-	    |       ..other library repositories from bastl instruments
-	    | 
-	    SEKVOJ
-	    |
-	    ..other device specific projects`
+	 `W_DIR<br/>
+	  &nbsp;&nbsp;|<br/>
+	  &nbsp;&nbsp; arduino_base<br/>
+	  &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|<br/>
+	  &nbsp;&nbsp;|&nbsp;&nbsp;libs-bastl<br/>
+	  &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|<br/>
+	  &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;bastl<br/>
+	  &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|<br/>
+	  &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;..other library repositories from bastl instruments<br/>
+	  &nbsp;&nbsp;| <br/>
+	  &nbsp;&nbsp;SEKVOJ<br/>
+	  &nbsp;&nbsp;|<br/>
+	  &nbsp;&nbsp;..other device specific projects`<br/>
 
 * Import arduino-base and the device projects in Eclipse by right-clicking in the project explorer and choosing
     Import > Existing projects into workspace
