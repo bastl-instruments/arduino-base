@@ -17,20 +17,18 @@ Test: If you can start eclipse you can pass on
 
 ### 2. Installing Eclipse Plugins and Toolchain
 
-* Eclipse-PLUGIN
-  Open Eclipse and go to
+* To install the AVR Eclipse-Plugin, open Eclipse and go to
       `Help > Install News Software`
   There, paste this link
     `http://avr-eclipse.sourceforge.net/updatesite`
-  into the first field called 'Work with'
+  into the first field called `Work with`
 
   Click through the install process.
   If you want to check if the installation was successful, go to
       `Help > About Eclipse Platform > Installation Details`
   and look for the AVR plugin
 
-* AVR TOOLCHAIN
-  You will need to install the avr-g++ compiler in order to compile your code to a .hex file and send it to the chip over your serial port.
+* You will need to install the avr-g++ compiler in order to compile your code to a .hex file and send it to the chip over your serial port.
   This step depends on your platform:
   - MAC OSX: Download and install the AVR CrossPack: http://www.obdev.at/products/crosspack/index.html
   - Linux: `sudo apt-get install gcc-avr binutils-avr avr-libc avrdude`
@@ -54,11 +52,9 @@ Test: If you can start eclipse you can pass on
 * Create an AVR programmer in Eclipse. Open
     `Preferences > AVR > AVRDuded > Add`
   Choose the following options:
-    `Programmer Hardware: Arduino`
-    `Default port: --> the path you found out in the last step`
-    `Default Baudrate: 115200`
-
-
+		Programmer Hardware: Arduino`
+		Default port: --> the path you found out in the last step
+		Default Baudrate: 115200
 
 
 
