@@ -85,12 +85,13 @@ Test: If you can start eclipse you can pass on
 * Import arduino-base and the device projects in Eclipse by right-clicking in the project explorer and choosing
     Import > Existing projects into workspace
 
+* Add the programmer you created in the previous step to all projects (except for arduino-base because it is a library).
+  Therefore go to:
+    Right click on project
+  
 
 
-### 5. Set up avr-dude
 
-Create arduino as a device
-use it in projects
 
 
 
