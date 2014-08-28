@@ -14,7 +14,7 @@
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 				<configuration artifactExtension="a" artifactName="${ProjName}" buildArtefactType="de.innot.avreclipse.buildArtefactType.staticLib" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release,org.eclipse.cdt.build.core.buildArtefactType=de.innot.avreclipse.buildArtefactType.staticLib" cleanCommand="rm -rf" description="" id="de.innot.avreclipse.configuration.lib.release.215330590" name="Release" parent="de.innot.avreclipse.configuration.lib.release">
 					<folderInfo id="de.innot.avreclipse.configuration.lib.release.215330590." name="/" resourcePath="">
-						<toolChain id="de.innot.avreclipse.toolchain.winavr.lib.release.738648423" name="AVR-GCC Toolchain" nonInternalBuilderId="de.innot.avreclipse.target.builder.winavr.lib.release" superClass="de.innot.avreclipse.toolchain.winavr.lib.release">
+						<toolChain id="de.innot.avreclipse.toolchain.winavr.lib.release.738648423" name="AVR-GCC Toolchain" nonInternalBuilderId="de.innot.avreclipse.target.builder.winavr.lib.release" superClass="de.innot.avreclipse.toolchain.winavr.lib.release" unusedChildren="de.innot.avreclipse.tool.size.winavr.lib.release">
 							<option id="de.innot.avreclipse.toolchain.options.toolchain.objdump.lib.release.1482000081" name="Generate Extended Listing (Source + generated Assembler)" superClass="de.innot.avreclipse.toolchain.options.toolchain.objdump.lib.release"/>
 							<option id="de.innot.avreclipse.toolchain.options.toolchain.size.lib.release.1084301891" name="Print Size" superClass="de.innot.avreclipse.toolchain.options.toolchain.size.lib.release"/>
 							<targetPlatform id="de.innot.avreclipse.targetplatform.winavr.lib.release.1643098646" name="AVR Cross-Target" superClass="de.innot.avreclipse.targetplatform.winavr.lib.release"/>
@@ -55,6 +55,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libs-bastl/bastl}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libs-bastl/bastl/bastlSamples}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libs-bastl/bastl/bastlTables}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libs-bastl/salda}&quot;"/>
 								</option>
 								<inputType id="de.innot.avreclipse.tool.assembler.input.1473224656" superClass="de.innot.avreclipse.tool.assembler.input"/>
 							</tool>
@@ -65,6 +66,7 @@
 								<option id="de.innot.avreclipse.compiler.option.optimize.shortenums.617406401" name="Short enums (-fshort-enums)" superClass="de.innot.avreclipse.compiler.option.optimize.shortenums" value="false" valueType="boolean"/>
 								<option id="de.innot.avreclipse.compiler.option.incpath.67011283" name="Include Paths (-I)" superClass="de.innot.avreclipse.compiler.option.incpath" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libs-bastl/salda}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/core}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libs}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libs/Wire}&quot;"/>
@@ -106,11 +108,14 @@
 								<option id="de.innot.avreclipse.compiler.option.language.ubitfields.1614492268" name="bitfields are unsigned (-funsigned-bitfields)" superClass="de.innot.avreclipse.compiler.option.language.ubitfields" value="false" valueType="boolean"/>
 								<inputType id="de.innot.avreclipse.compiler.winavr.input.2077609116" name="C Source Files" superClass="de.innot.avreclipse.compiler.winavr.input"/>
 							</tool>
+							<tool id="de.innot.avreclipse.tool.cpplinker.base.1104241014" name="AVR C++ Linker" superClass="de.innot.avreclipse.tool.cpplinker.base"/>
+							<tool id="de.innot.avreclipse.tool.archiver.winavr.lib.release.403263046" name="AVR Archiver" superClass="de.innot.avreclipse.tool.archiver.winavr.lib.release"/>
 							<tool id="de.innot.avreclipse.tool.cppcompiler.lib.release.1951431985" name="AVR C++ Compiler" superClass="de.innot.avreclipse.tool.cppcompiler.lib.release">
 								<option id="de.innot.avreclipse.cppcompiler.option.debug.level.337151018" name="Generate Debugging Info" superClass="de.innot.avreclipse.cppcompiler.option.debug.level" value="de.innot.avreclipse.cppcompiler.option.debug.level.none" valueType="enumerated"/>
 								<option id="de.innot.avreclipse.cppcompiler.option.optimize.259469816" name="Optimization Level" superClass="de.innot.avreclipse.cppcompiler.option.optimize" value="de.innot.avreclipse.cppcompiler.optimize.size" valueType="enumerated"/>
 								<option id="de.innot.avreclipse.cppcompiler.option.incpath.1591633908" name="Include Paths (-I)" superClass="de.innot.avreclipse.cppcompiler.option.incpath" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libs-bastl/salda}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libs-external/arduino_midi_library/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/core}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libs}&quot;"/>
@@ -154,15 +159,12 @@
 								<option id="de.innot.avreclipse.cppcompiler.option.language.ubitfields.1551449788" name="bitfields are unsigned (-funsigned-bitfields)" superClass="de.innot.avreclipse.cppcompiler.option.language.ubitfields" value="false" valueType="boolean"/>
 								<inputType id="de.innot.avreclipse.cppcompiler.input.764962945" superClass="de.innot.avreclipse.cppcompiler.input"/>
 							</tool>
-							<tool id="de.innot.avreclipse.tool.linker.winavr.base.974456124" name="AVR C Linker" superClass="de.innot.avreclipse.tool.linker.winavr.base"/>
-							<tool id="de.innot.avreclipse.tool.cpplinker.base.1104241014" name="AVR C++ Linker" superClass="de.innot.avreclipse.tool.cpplinker.base"/>
-							<tool id="de.innot.avreclipse.tool.archiver.winavr.lib.release.403263046" name="AVR Archiver" superClass="de.innot.avreclipse.tool.archiver.winavr.lib.release"/>
 							<tool id="de.innot.avreclipse.tool.objdump.winavr.lib.release.1378921292" name="AVR Create Extended Listing" superClass="de.innot.avreclipse.tool.objdump.winavr.lib.release"/>
-							<tool id="de.innot.avreclipse.tool.size.winavr.lib.release.1205302096" name="Print Size" superClass="de.innot.avreclipse.tool.size.winavr.lib.release"/>
+							<tool id="de.innot.avreclipse.tool.linker.winavr.base.974456124" name="AVR C Linker" superClass="de.innot.avreclipse.tool.linker.winavr.base"/>
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="libs-external/Fat16/examples|libs-bastl/bastl/players/test|libs-bastl/bastl/controls/test|libs-bastl/bastl/data/test|libs/EEPROM/examples|libs/LiquidCrystal/examples|libs/SoftwareSerial/examples|libs-bastl/bastlMicroGranny/examples|libs-bastl/bastl/examples|libs/Stepper|libs/Servo|libs-external/TVoutfonts|libs-external/TVout|libs-external/Tlc5940|libs/Stepper/examples|libs/Wire/examples|libs-external/sdfatlib/html|libs-external/sdfatlib/SdFat/examples|libs-external/sdfatlib/extra|libs/SD|libs-external/WaveRP|libs/Robot_Control|sources|libs/Firmata|libs-external/ShiftRegister|robot|libs/Ethernet|libs/WiFi|libs-external/pollserial|libs/TFT|libs-external/ShiftRegister595|libs/Esplora|libs/Robot_Motor|libs/GSM" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="libs-external/tinyFAT|libs-external/sdfatlib|libs-bastl/bastl/modules/test|libs-external/Fat16/examples|libs-bastl/bastl/players/test|libs-bastl/bastl/controls/test|libs-bastl/bastl/data/test|libs/EEPROM/examples|libs/LiquidCrystal/examples|libs/SoftwareSerial/examples|libs-bastl/bastlMicroGranny/examples|libs-bastl/bastl/examples|libs/Stepper|libs/Servo|libs-external/TVoutfonts|libs-external/TVout|libs-external/Tlc5940|libs/Stepper/examples|libs/Wire/examples|libs-external/sdfatlib/html|libs-external/sdfatlib/SdFat/examples|libs-external/sdfatlib/extra|libs/SD|libs-external/WaveRP|libs/Robot_Control|sources|libs/Firmata|libs-external/ShiftRegister|robot|libs/Ethernet|libs/WiFi|libs-external/pollserial|libs/TFT|libs-external/ShiftRegister595|libs/Esplora|libs/Robot_Motor|libs/GSM" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
