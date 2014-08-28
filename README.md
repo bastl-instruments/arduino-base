@@ -52,9 +52,10 @@ Test: If you can start eclipse you can pass on
 * Create an AVR programmer in Eclipse. Open
     `Preferences > AVR > AVRDuded > Add`
   Choose the following options:
-		Programmer Hardware: Arduino`
-		Default port: --> the path you found out in the last step
-		Default Baudrate: 115200
+
+		    Programmer Hardware: Arduino
+		    Default port: --> the path you found out in the last step
+		    Default Baudrate: 115200
 
 
 
