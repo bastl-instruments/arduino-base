@@ -68,30 +68,31 @@ Test: If you can start eclipse you can pass on
 
 * Download the repositories from bastl-instruments and copy them in the following matter
 
-	 `W_DIR<br/>
-	  &nbsp;&nbsp;|<br/>
-	  &nbsp;&nbsp; arduino_base<br/>
-	  &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|<br/>
-	  &nbsp;&nbsp;|&nbsp;&nbsp;libs-bastl<br/>
-	  &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|<br/>
-	  &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;bastl<br/>
-	  &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|<br/>
-	  &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;..other library repositories from bastl instruments<br/>
-	  &nbsp;&nbsp;| <br/>
-	  &nbsp;&nbsp;SEKVOJ<br/>
-	  &nbsp;&nbsp;|<br/>
-	  &nbsp;&nbsp;..other device specific projects`<br/>
+		 W_DIR
+		    |
+		    arduino_base
+		    |   |
+		    |   libs-bastl
+		    |       |
+		    |	    bastl
+		    |       |
+		    |       ..other library repositories from bastl instruments
+		    | 
+		    SEKVOJ
+		    |
+		    ..other device specific projects
 
-* Import arduino-base and the device projects in Eclipse by right-clicking in the project explorer and choosing
-    Import > Existing projects into workspace
+* Open Eclipse, change the workspace you are using to W_DIR by
+    File > Change Workspace
+
+* Import arduino-base and the instrument specific projects to eclipse via
+    File > Import > General > Existing project into workspace   
 
 * Add the programmer you created in the previous step to all projects (except for arduino-base because it is a library).
   Therefore go to:
-    Right click on project
-  
+    Right click on project name > Properties > AVR > AVR Dude
 
-
-
+--> You should now be able to 'Build all' Projects by clicking to the apropriate icon in the top bar. After that you can click on the desired project and upload it to the chip by using the avr icon in the top bar
 
 
 
