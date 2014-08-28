@@ -19,25 +19,25 @@ Test: If you can start eclipse you can pass on
 
 * Eclipse-PLUGIN
   Open Eclipse and go to
-    Help > Install News Software
+      `Help > Install News Software`
   There, paste this link
-    http://avr-eclipse.sourceforge.net/updatesite
+    `http://avr-eclipse.sourceforge.net/updatesite`
   into the first field called 'Work with'
 
   Click through the install process.
   If you want to check if the installation was successful, go to
-    Help > About Eclipse Platform > Installation Details
+      `Help > About Eclipse Platform > Installation Details`
   and look for the AVR plugin
 
 * AVR TOOLCHAIN
   You will need to install the avr-g++ compiler in order to compile your code to a .hex file and send it to the chip over your serial port.
   This step depends on your platform:
   - MAC OSX: Download and install the AVR CrossPack: http://www.obdev.at/products/crosspack/index.html
-  - Linux: sudo apt-get install gcc-avr binutils-avr avr-libc avrdude
+  - Linux: `sudo apt-get install gcc-avr binutils-avr avr-libc avrdude`
   - Windows: Download and install WinAVR: http://winavr.sourceforge.net/
 
   When the Eclipse plugin can locate those tools you were successful. You can check this in:
-    Preferences > AVR > Paths
+    `Preferences > AVR > Paths`
   The 'Atmel Part Description Files' are not needed here.
 
 
@@ -49,14 +49,14 @@ Test: If you can start eclipse you can pass on
 
 * Plug in your programmer and find out the serial port it is using.
   On mac on linux, this command will help you choose your device:
-  ls /dev | grep tty
+  `ls /dev | grep tty`
   
 * Create an AVR programmer in Eclipse. Open
-    Preferences > AVR > AVRDuded > Add
+    `Preferences > AVR > AVRDuded > Add`
   Choose the following options:
-    Programmer Hardware: Arduino
-    Default port: //the path you found out in the last step//
-    Default Baudrate: 115200
+    `Programmer Hardware: Arduino`
+    `Default port: --> the path you found out in the last step`
+    `Default Baudrate: 115200`
 
 
 
@@ -83,16 +83,16 @@ Test: If you can start eclipse you can pass on
 		    ..other device specific projects
 
 * Open Eclipse, change the workspace you are using to W_DIR by
-    File > Change Workspace
+    `File > Change Workspace`
 
 * Import arduino-base and the instrument specific projects to eclipse via
-    File > Import > General > Existing project into workspace   
+    `File > Import > General > Existing project into workspace`
 
 * Add the programmer you created in the previous step to all projects (except for arduino-base because it is a library).
   Therefore go to:
-    Right click on project name > Properties > AVR > AVR Dude
+    `Right click on project name > Properties > AVR > AVR Dude`
 
---> You should now be able to 'Build all' Projects by clicking to the apropriate icon in the top bar. After that you can click on the desired project and upload it to the chip by using the avr icon in the top bar
+--> You should now be able to `Build all` Projects by clicking to the apropriate icon in the top bar. After that you can click on the desired project and upload it to the chip by using the avr icon in the top bar
 
 
 
